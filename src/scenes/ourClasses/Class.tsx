@@ -12,8 +12,8 @@ function Class({name,description,image}: Props) {
     opacity-0 transition duration-500 hover:opacity-90`;  return (
    <li className="relative mx-5 inline-block h-[380px] w-[450px]">
    <div className={overlayStyles}>
-    <p>{name}</p>
-    <p>{description}</p>
+    <p className="text-2xl">{name}</p>
+    <p className="mt-5">{description}</p>
    </div>
    <img src={image} alt={`{image}`} />
 
